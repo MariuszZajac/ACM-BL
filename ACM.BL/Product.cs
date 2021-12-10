@@ -1,4 +1,6 @@
-﻿namespace ACM.BL
+﻿using Acme.Common;
+
+namespace ACM.BL
 {
     public class Product:EntityBase
     {
@@ -14,8 +16,13 @@
     public string ProductDescription { get; set; }
     public int ProductId { get; set; }
 
-    public string ProductName { get; set; }
-
+    private string _productName;
+    public string ProductName
+    {
+        get => _productName.InsertSpaces();
+        set => _productName = value;
+    }
+    
     public override string ToString() => ProductName;
    
     public override bool Validate()
