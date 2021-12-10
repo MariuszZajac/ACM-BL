@@ -7,6 +7,8 @@ namespace ACM.BLTest
     [TestClass]
     public class CustomerTest
     {
+        public static bool False { get; set; }
+
         [TestMethod]
         public void FullNameTestValid()
         {
@@ -102,6 +104,22 @@ namespace ACM.BLTest
             //-- Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ValidateMissingLastName()
+        {
+            //-- Arrange
+            var customer = new Customer
+            {
+                EmailAddress = "fbagins@hobbit.me"
+            };
 
+            var expected = False;
+
+            //-- Act
+            var actual = customer.Validate();
+
+            //-- Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
