@@ -18,7 +18,7 @@
 
     public override string ToString() => ProductName;
    
-    public bool Validate()
+    public override bool Validate()
     {
         bool isValid = !string.IsNullOrWhiteSpace(ProductName);
         if (CurrentPrice == null) isValid = false;
