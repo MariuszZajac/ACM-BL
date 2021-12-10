@@ -41,7 +41,7 @@ namespace ACM.BL
 
             address = new Address(2)
             {
-                AddressType = 12,
+                AddressType = 2,
                 State = "Shire2",
                 StreetLine1 = "BagEnd2",
                 StreetLine2 = "Bangshot2",
