@@ -1,0 +1,6 @@
+C:\Users\Ed\RiderProjects\Deborah Kurata\ACM.BL\ACM.BL\bin\Debug\ACM.BL.dll
+C:\Users\Ed\RiderProjects\Deborah Kurata\ACM.BL\ACM.BL\bin\Debug\ACM.BL.pdb
+C:\Users\Ed\RiderProjects\Deborah Kurata\ACM.BL\ACM.BL\obj\Debug\ACM.BL.csproj.AssemblyReference.cache
+C:\Users\Ed\RiderProjects\Deborah Kurata\ACM.BL\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
+C:\Users\Ed\RiderProjects\Deborah Kurata\ACM.BL\ACM.BL\obj\Debug\ACM.BL.dll
+C:\Users\Ed\RiderProjects\Deborah Kurata\ACM.BL\ACM.BL\obj\Debug\ACM.BL.pdb
