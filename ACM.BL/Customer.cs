@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Acme.Common;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntityBase, ILoggable
     {
         public Customer() : this(0)
         {
@@ -42,13 +44,20 @@ namespace ACM.BL
         public string LastName { get; set; }
         public override string ToString()=>FullName;
 
-            public bool Validate()
-        {
-            var isValid = true;
-            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
-            if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
-            return isValid;
-        }
+        // public string Log()
+        // {
+        //     var logString = CustomerId + ":" + FullName + " " + "Email: " + EmailAddress + " " + "Status: " +
+        //                     EntityState.ToString();
+        //     return logString;
+        // }
+        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
+        
+            public override bool Validate()
+            {
+                bool isValid = !string.IsNullOrWhiteSpace(LastName);
+                if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
+                return isValid;
+            }
     }
     
 }

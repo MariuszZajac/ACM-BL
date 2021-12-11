@@ -53,6 +53,8 @@
         <Reference Include="System.Xml.Linq" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="ILoggable.cs" />
+        <Compile Include="LoggingService.cs" />
         <Compile Include="StringHandler.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
